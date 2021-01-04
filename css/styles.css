@@ -1,0 +1,283 @@
+* { /*setup for all*/
+    box-sizing: border-box; /*makes the box to have width as max size*/
+ }
+
+ .body_container { /* allows the page have max wight. Good for responsiviness web page */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-grow: 0; */
+    justify-content: center;
+
+}
+
+body { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+    background-color:  gray;
+    background:  linear-gradient(to bottom , gray, lightgray);
+    padding-top: 60px; /*to compasensate the fix nav bar*/
+}
+
+
+nav {
+    display: flex;
+    order: 0;
+    /* flex-shrink: 0; */
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-around;
+
+    position: fixed; 
+    top: 0px;
+    /*  left: 0; */
+    /* box-sizing: border-box; */
+    /* z-index: 1; */
+
+    width: 100%; 
+    height: 60px;
+    border-bottom-width: 2px;
+    border-bottom-color: yellow;
+    border-bottom-style: solid ;
+    background-color: #f00000;
+    } 
+
+
+
+#nav_brand{
+    display: flex;
+    flex-basis: 170px;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+
+    width: auto;
+    /* border: 1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700 ;
+    font-size: 32px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    /* background-color: #fff; */
+    color: white;
+    /* margin-right: 7px;
+    margin-top: 10px; */
+
+}
+
+.nav_search {
+    display: flex;
+    flex-basis: 600px;
+    justify-content: center;
+    /* border: 1px solid yellow; */
+}
+
+.nav_search input {
+    width: 90%; /* Feels all the way possible */
+    border: 1px solid #aaaaaa;
+    
+    font-size: 16px;
+} 
+
+.nav_right_container {
+    display: flex;
+    flex-basis: 100px;
+    justify-content: space-around;
+    border: 1px solid black;
+    align-self: center;
+}
+
+.button_user {
+    display: inline-block;
+
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    border: 2px solid white
+}
+
+.button_options_container {
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; 
+    height: 50px;
+    
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.button_options {
+    /* position: relative; */
+    display: flex;
+    transition: 0.3s; /* Add transition on hover */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Set a specific width */
+    height: 40px;
+
+
+    font-family: Arial;
+    font-size: 20px; /* Increase font size */
+    background-color: darkgray;
+    color: white; /* White text color */
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px; /* Rounded corners on the top right and bottom right side */
+    text-decoration: none; /* Remove underline */
+
+    /* padding: 15px; 15px padding */
+    /* margin-left: 30px; */
+}
+
+.button_options:hover{
+    width: 110%;
+    height: 45px;
+    left: 0; /* On mouse-over, make the elements appear as they should */
+    background-color: red;
+    cursor: pointer;
+  }
+
+button {
+    outline: 0 !important; /*  !important - make the set up to be strong and harder to overwrite */
+    border-radius: 5px;
+    transition: all 0.25ms ease-in-out; /* for the hovering be nicer */
+
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    
+    background-color: #cc4331;
+    color: white;
+    padding: 4px;
+    font-family: "Indie Flower", cursive; 
+}
+button:hover {
+    background-color: #d25544;
+}
+button:active {
+    box-shadow: none;
+}
+
+main {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    flex-grow: 1;
+    order:2;
+
+    box-sizing: border-box;
+    /* border: 1px solid yellow; */
+}
+
+aside.left {
+    flex-basis: 15%;
+    flex-shrink: 1;
+    flex-grow: 0;
+    order:1;
+
+    /* box-sizing: border-box; */
+    /* border: 1px solid yellow; */
+}
+
+aside.right {
+    flex : 0 0 15%;
+
+    flex-basis: 15%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    order:3;
+    text-align: center;
+
+    /* box-sizing: border-box; */
+    /* border: 1px solid yellow; */
+}
+
+
+footer {
+    display: flex;
+    order: 4;
+    align-items : center;
+    justify-content: space-around;
+    flex-basis: 100%;
+
+    /* width: 100%; */
+    background-color: black;
+    color: white;
+    border: 1px solid yellow;
+    padding: 30px;
+}
+
+footer > div {
+    flex-basis: 25%;
+    justify-content: space-around;
+
+    border: 1px solid yellow;
+}
+
+
+/*Responsive web design*/
+@media(min-width: 1300px) { 
+    .body_container {
+        width: 900px;
+    }
+
+}/*adding a set up when width higher than 700px*/ 
+
+@media(max-width: 700px) { /*adding a set up when width lower than 700px*/ 
+    body {
+        border: 5px solid blue;
+    }
+
+    footer , body {
+        /* flex-wrap: wrap; */
+        margin-bottom: 8px;
+    }
+
+    footer > div {
+        flex-basis: 50%; /*change flex based to be able to have more rows */
+        flex-shrink: 0;
+
+        border: 2px dashed yellow ; 
+        margin-bottom: 8px;
+    }
+
+    aside, main {
+        flex-basis: 100%; /*this make to wrap*/
+        flex-shrink: 0; 
+
+        display: block; /*change from display flex to block. It is good set up for smalled screens*/
+        
+        margin-bottom: 8px;
+    }
+
+    aside.left {order:3;}
+    aside.right {display: none;}
+    main {order:1;}
+
+}
+
+
+@media print { /*add here all you do not want to be available when print*/
+    nav,
+    footer,
+    aside,
+    .class_not_to_print,
+}
+
+
+
+.video_container { /*iframe needs to be put inside a div with the classes below to be responsive*/
+    position: relative;
+    height: .0;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%; /*16x9 sizes - Usually you tube;  75%% fpr  4x3 sizes*/
+}
+.video_container frame { /*resposive iframes */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} 

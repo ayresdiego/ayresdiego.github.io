@@ -2,6 +2,6 @@
 
 > Diego's website
 
-> click below in the hto access the https github website:
+> click in the link below to access the https github website:
 
 > https://ayresdiego.github.io/
