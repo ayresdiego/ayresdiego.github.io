@@ -1,6 +1,7 @@
 # ayresdiego.github.io
 
-> this is the website of Diego Ayres
+> Diego's website
 
-> click below in the https github website:
+> click below in the hto access the https github website:
+
 > https://ayresdiego.github.io/
