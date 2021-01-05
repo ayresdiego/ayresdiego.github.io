@@ -41,7 +41,7 @@ nav {
     border-bottom-width: 2px;
     border-bottom-color: yellow;
     border-bottom-style: solid ;
-    background-color: #f00000;
+    background-color: red;
     } 
 
 
@@ -263,6 +263,10 @@ footer > div {
     aside.right {display: none;}
     main {order:1;}
 
+    .button_options {
+        font-size: 14px;
+        height: auto;
+    }
 }
 
 
