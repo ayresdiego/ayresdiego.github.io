@@ -1,4 +1,4 @@
-## ayresdiego.github.io
+# ayresdiego.github.io
 
 ### Diego's website
 
