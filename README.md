@@ -1,9 +1,8 @@
 ## ayresdiego.github.io
 
-# Diego's website
+### Diego's website
 
-> Click in the link below to access the https github website:
+> Click in the link below to access Diego's https github website:
 
-'''
+
 https://ayresdiego.github.io/
-'''
