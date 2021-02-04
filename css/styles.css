@@ -18,7 +18,7 @@ body {
 
     background-color:  gray;
     background:  linear-gradient(to bottom , gray, lightgray);
-    padding-top: 60px; /*to compasensate the fix nav bar*/
+    /*padding-top: 60px; to compasensate the fix nav bar*/
 }
 
 
@@ -209,24 +209,24 @@ aside.right {
 
 
 footer {
-    display: flex;
-    order: 4;
-    align-items : center;
-    justify-content: space-around;
-    flex-basis: 100%;
+    /* display: flex; */
+    /* order: 4; */
+    /* align-items : center; */
+    /* justify-content: space-around; */
+    /* flex-basis: 100%; */
 
     /* width: 100%; */
-    background-color: black;
-    color: white;
-    border: 1px solid yellow;
-    padding: 30px;
+    /* background-color: black; */
+    /* color: white; */
+    /* border: 1px solid yellow; */
+    /* padding: 30px; */
 }
 
 footer > div {
-    flex-basis: 25%;
-    justify-content: space-around;
+    /* flex-basis: 25%; */
+    /* justify-content: space-around; */
 
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 
@@ -240,20 +240,23 @@ footer > div {
 
 @media(max-width: 700px) { /*adding a set up when width lower than 700px*/ 
     body {
-        border: 5px solid blue;
+        /* border: 5px solid blue; */
+        height: auto;
+        /* background-color: black; */
     }
+
 
     footer , body {
         /* flex-wrap: wrap; */
-        margin-bottom: 8px;
+        /* margin-bottom: 8px; */
     }
 
     footer > div {
         flex-basis: 50%; /*change flex based to be able to have more rows */
         flex-shrink: 0;
 
-        border: 2px dashed yellow ; 
-        margin-bottom: 8px;
+        /* border: 2px dashed yellow ;  */
+        /* margin-bottom: 8px; */
     }
 
     aside, main {
@@ -262,7 +265,7 @@ footer > div {
 
         display: block; /*change from display flex to block. It is good set up for smalled screens*/
         
-        margin-bottom: 8px;
+        /* margin-bottom: 8px; */
     }
 
     aside.left {order:3;}
