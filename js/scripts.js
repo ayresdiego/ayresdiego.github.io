@@ -23,15 +23,27 @@ btn_2.addEventListener('click', function(url) { // add the event Listener to the
     btn_2.classList.add("border_click");
 })
 
-var btn_2 = document.querySelector(".project_3") // get the button to the a variable
-btn_2.addEventListener('click', function(url) { // add the event Listener to the variable
+var btn_3 = document.querySelector(".project_3") // get the button to the a variable
+btn_3.addEventListener('click', function(url) { // add the event Listener to the variable
     url = "https://github.com/ayresdiego/Python_projects"
     // url = "Project_2/index.html	"
     var win = window.open(url, '_blank');
     win.focus(); 
 
-    btn_2.classList.add("border_click");
+    btn_3.classList.add("border_click");
 })
+
+
+var btn_4 = document.querySelector(".project_4") // get the button to the a variable
+btn_4.addEventListener('click', function(url) { // add the event Listener to the variable
+    url = "https://covid-cases-historical.herokuapp.com/"
+    // url = "Project_2/index.html	"
+    var win = window.open(url, '_blank');
+    win.focus(); 
+
+    btn_4.classList.add("border_click");
+})
+
 
 
 
