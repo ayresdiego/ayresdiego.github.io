@@ -36,7 +36,7 @@ btn_3.addEventListener('click', function(url) { // add the event Listener to the
 
 var btn_4 = document.querySelector(".project_4") // get the button to the a variable
 btn_4.addEventListener('click', function(url) { // add the event Listener to the variable
-    url = "https://covid-cases-historical.herokuapp.com/"
+    url = "https://dash-covid-historical.herokuapp.com/"
     // url = "Project_2/index.html	"
     var win = window.open(url, '_blank');
     win.focus(); 
