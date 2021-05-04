@@ -26,6 +26,7 @@ btn_2.addEventListener('click', function(url) { // add the event Listener to the
 var btn_3 = document.querySelector(".project_3") // get the button to the a variable
 btn_3.addEventListener('click', function(url) { // add the event Listener to the variable
     url = "https://github.com/ayresdiego/Python_projects"
+    url = "https://github.com/ayresdiego"
     // url = "Project_2/index.html	"
     var win = window.open(url, '_blank');
     win.focus(); 
