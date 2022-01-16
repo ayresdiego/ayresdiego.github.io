@@ -366,8 +366,10 @@ footer > div {
         text-align: center;
         margin: 0;
         padding: 0;
+        /* border: 3px solid blue*/
     }
 
+    
     footer , body {
         /* flex-wrap: wrap; */
         /* margin-bottom: 8px; */
@@ -398,9 +400,7 @@ footer > div {
         margin-left: 0px;
     }
 
-    div {
-        border: 3px solid blue
-    }
+
     .button_options {
         /*font-size: 16px;*/
         /*height: auto;*/
