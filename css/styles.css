@@ -111,14 +111,6 @@ aside.right {
     /*border: 3px solid blue; */
 }
 
-.special_font {
-    font-size: 20px;
-    font-family: 'Indie Flower' ;
-    /*text-decoration: underline; */
-    /*font-weight: 900;*/
-    color: red;
-    border-bottom: 0.5px solid red;
-}
 
 #nav_brand{
     display: flex;
@@ -161,6 +153,36 @@ aside.right {
     align-self: center;
 }
 
+.topic_container {
+    /* Center child horizontally*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    /* flex-wrap: nowrap; */
+    /* width: 100%; */
+    padding-top: 20px; 
+}
+
+.header_container {
+    /* display: inline-block; */
+    /* align-self: left;  */
+}
+
+.special_font {
+    font-family: 'Indie Flower' ;
+    font-size: 22px;
+    color: red;
+    border-bottom: 0.5px solid red;
+    /*text-decoration: underline; */
+    font-weight: 600;
+    /* background-color: yellow; */
+}
+
+.margin_left {
+    margin-left: 35px;
+}
+
+
 .button_user {
     display: inline-block;
 
@@ -184,7 +206,7 @@ aside.right {
     /* width: 1000px; */
     /*height: auto; */
     height: 120%;
-    padding-top: 10px;
+    margin-top: 10px;
     margin-left: 15px;
     /*border: 2px solid yellow;*/
 }
@@ -226,9 +248,6 @@ aside.right {
     cursor: pointer;
 }
 
-.margin_left {
-    margin-left: 35px;
-}
 
 button {
     outline: 0 !important; /* !important - make the set up to be strong and harder to overwrite */
@@ -397,11 +416,12 @@ footer > div {
     aside.left {order:3;}
     aside.right {display: none;}
     main {order:1;}
+
     .button_options_container {
         width: 80%;
         margin-left: 0px;
+        padding-top: 2px;
     }
-
 
     .margin_left { /*removing the left padding of the style*/ 
         margin-left: 0px;
@@ -413,14 +433,16 @@ footer > div {
         height: 20px;
         font-size: 12px; /* decrease font size */
         }
+
     .button_options:hover {
        /* font-size: 18px;*/
        /* height: auto;*/
     }
 
     .special_font {
-       /*font-weight: 900;*/
-       /*text-decoration: underline; */
+        font-size: 20px;
+        font-weight: 500;
+        /*text-decoration: underline; */
     }
 
     .image_container_2 {
